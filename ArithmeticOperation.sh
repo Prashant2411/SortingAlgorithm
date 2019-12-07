@@ -30,3 +30,16 @@ do
 		fi
 	done
 done
+
+for((j=0; j<4;j++))
+	do
+	for((i=0;i<4-$j-1;i++))
+	do
+		if [ ${array[$i]} -gt ${array[$(($i +1))]} ]
+		then
+			temp=${array[$i]}
+         		array[(($i))]=${array[$(( $i +1 ))]}
+         		array[$(( $i +1 ))]=$temp
+	 	fi
+	done
+done
