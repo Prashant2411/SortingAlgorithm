@@ -6,4 +6,4 @@ read -p "Enter the third number: " c
 
 echo $(( $a + $b * $c ))
 echo $(( $a * $b + $c ))
-
+echo $(( $c + $a / $b ))
